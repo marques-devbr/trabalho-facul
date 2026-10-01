@@ -1,0 +1,134 @@
+/* Estilo geral da página */
+body {
+  background-color: #12121f;      /* cor de fundo da página */
+  color: #dcdcec;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;               /* espaço entre as linhas, facilita a leitura */
+  margin: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #1e1e3a;
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 4px solid #00e5ff;
+}
+
+h1 {
+  color: #00e5ff;                 /* cor do texto do título */
+  margin: 0;
+}
+
+.subtitulo {
+  color: #ff4fd8;
+  margin: 8px 0 0;
+  font-weight: bold;
+}
+
+/* Conteúdo principal centralizado */
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Imagem do controle: centralizada e sem passar de 450px */
+.controle {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto 30px;
+}
+
+/* Cada seção vira um "cartão" escuro com borda colorida */
+section {
+  background-color: #1e1e3a;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #ff4fd8;
+}
+
+h2 {
+  color: #ff4fd8;
+  margin-top: 0;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: #00e5ff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffd84d;
+}
+
+/* Lista de gêneros: vira uma grade de cartões com a capa de cada jogo */
+.generos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 15px;
+}
+
+.generos li {
+  background-color: #12121f;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.generos strong {
+  display: block;
+  color: #00e5ff;
+  margin-top: 10px;
+}
+
+.generos span {
+  display: block;
+  font-size: 14px;
+  color: #aaaacc;
+}
+
+/* Todas as capas com a mesma altura; object-fit corta o excesso sem distorcer */
+.capa {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* Ajuste do enquadramento de cada capa */
+.tomb    { object-position: 30% center; }
+.dead    { object-position: center 15%; }
+.cod     { object-position: center 15%; }
+
+/* Logo da Steam (clicável) */
+.logo-steam {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  margin-top: 15px;
+  opacity: 0.9;
+}
+
+.logo-steam:hover {
+  opacity: 1;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #8888aa;
+  font-size: 14px;
+}
